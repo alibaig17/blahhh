@@ -1,0 +1,151 @@
+/* ---------- GLOBAL ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #111; /* dark frame */
+}
+
+/* main beige canvas */
+.page {
+  background: #f4d9b4;
+  color: #111;
+  max-width: 1200px;
+  margin: 16px auto;
+  padding: 40px 60px;
+  min-height: calc(100vh - 32px);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- NAV ---------- */
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 48px;               /* spacing like Figma */
+  font-size: 1.1rem;
+  font-weight: 700;       /* bold */
+  margin-bottom: 40px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #111;
+  letter-spacing: 0.08em; /* professional designer spacing */
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+
+/* ---------- SHARED ---------- */
+main {
+  flex-grow: 1;
+}
+
+.page-heading {
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+/* ---------- HOME PAGE ---------- */
+.home-hero h1 {
+  font-size: 4.5rem;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+.home-hero p {
+  font-size: 1.6rem;
+  max-width: 700px;
+  line-height: 1.5;
+  margin: 0 auto 32px;
+}
+
+.btn-main {
+  padding: 14px 40px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 2px solid #111;
+  background: transparent;
+}
+
+.btn-main:hover {
+  background: #f8e0b6;
+}
+
+/* ---------- ABOUT PAGE ---------- */
+.about-title {
+  font-size: 2.6rem;
+  margin-bottom: 18px;
+}
+
+.about-text {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 28px;
+  max-width: 420px;
+}
+
+.skills-heading {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+.skills-list div {
+  font-size: 1.1rem;
+}
+
+.profile-photo {
+  width: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+/* ---------- WORK PAGE ---------- */
+.work-item-text {
+  font-size: 1.25rem;   /* bigger text */
+  line-height: 1.6;
+}
+
+
+.work-img {
+  width: 100%;
+  max-width: 230px;
+  display: block;
+  margin-left: auto;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+  .page {
+    padding: 24px;
+  }
+
+  .home-hero h1 {
+    font-size: 3.2rem;
+  }
+
+  .home-hero p {
+    font-size: 1.3rem;
+  }
+
+  .work-img {
+    margin: 16px auto 0;
+  }
+
+  .nav {
+    justify-content: center !important;
+  }
+}
+
+.skills-inline {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-top: 6px;
+}
